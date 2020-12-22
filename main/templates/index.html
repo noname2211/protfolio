@@ -11,11 +11,9 @@
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{%static 'css/styles.css'%}" rel="stylesheet" />
     </head>
-
     <body id="page-top">
        {% load static %}
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
@@ -28,6 +26,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#login">Login</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#register">Register</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#search">Search</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
@@ -62,6 +61,11 @@
             <div class="container">
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Login</h2>
+                <div class="divider-custom divider-dark">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
                 <div class="divider-custom">
                     <form class="col-md-offset-3 col-md-6" action="login" method="post">
 
@@ -78,10 +82,46 @@
                 </div>
             </div>
         </section>
+        <section class="page-section portfolio" id="register">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Register</h2>
+                <div class="divider-custom divider-dark">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="divider-custom">
+                    <form class="col-md-offset-3 col-md-6" action="register" method="post">
+                        <div class="form-group">
+                            <label for="first_name" class="control-label">First Name</label>
+                            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name" class="control-label">Last Name</label>
+                            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="logged_email" class="control-label">Email</label>
+                            <input type="email" class="form-control" id="logged_email" name="logged_email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="logged_pwd" class="control-label">Password</label>
+                            <input type="password" class="form-control" id="logged_pwd" name="logged_pwd" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="conf_pwd" class="control-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="conf_pwd" name="conf_pwd" placeholder="Confirm Password">
+                        </div>
+                        <button type="submit" class="btn btn-dark">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
 
 
-       <section class="page-section bg-primary text-white mb-0" id="about">
+       <section class="masthead bg-primary text-white text-center" id="about">
             <div class="container">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
@@ -112,12 +152,19 @@
             <div class="container">
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Search</h2>
+                <div class="divider-custom divider-dark">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
                 <!-- Icon Divider-->
 
 
                 <div class="divider-custom">
                     <form>
-                      <input type="text" name="search" placeholder="Search..">
+                        <div class="active-cyan-3 active-cyan-4 mb-4">
+                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                        </div>
                     </form>
                 </div>
 
@@ -129,7 +176,7 @@
         <footer class="footer text-center" id="contact">
 
             <div class="container">
-                    <h1 class="page-section-heading text-center text-uppercase text-white">Contact</h1>
+                    <h1 class="page-section-heading text-center text-uppercase text-white">Contact Us</h1>
 
                     <div class=" scol-lg-3 mb-5 mb-lg-0">
                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
